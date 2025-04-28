@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>リンク集</title>
+</head>
+<body>
+    <h1>リンク集</h1>
+    <ul>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://chibatech.jp/">千葉工業大学</a></li>
+    </ul>
+</body>
+</html>
