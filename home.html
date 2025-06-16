@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>超シンプルクイズ</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .question {
+      font-weight: bold;
+      color: #10467d;
+    }
+    .btn {
+      padding: 8px 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container" style="text-align:center; margin-top:50px;">
+    <h1 style="color: #3498db;">クイズに挑戦！</h1>
+    
+    <p class="question">Q. 日本の首都はどこですか？</p>
+    
+    <button class="btn" onclick="checkAnswer(this)">大阪</button>
+    <button class="btn" onclick="checkAnswer(this)">東京</button>
+    <button class="btn" onclick="checkAnswer(this)">京都</button>
+
+    <p id="result" style="font-size: 20px; margin-top: 20px;"></p>
+  </div>
+
+  <script>
+    function checkAnswer(button) {
+      const answer = button.textContent;
+      const result = document.getElementById("result");
+      if (answer === "東京") {
+        result.textContent = "正解！🎉";
+        result.style.color = "green";
+      } else {
+        result.textContent = "残念、不正解。";
+        result.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html>
